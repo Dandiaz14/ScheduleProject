@@ -1,0 +1,27 @@
+{
+  "name": "agenda",
+  "integrations": {},
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/home",
+      "proxyUrl": "http://127.0.0.1:5000/home"
+    },
+    {
+      "path": "/login",
+      "proxyUrl": "http://127.0.0.1:5000/login"
+    },
+    {
+      "path": "/agenda",
+      "proxyUrl": "http://127.0.0.1:5000/agenda"
+    },
+    {
+      "path": "/contact",
+      "proxyUrl": "http://127.0.0.1:5000/contact"
+    },
+    {
+      "path": "/nuevo",
+      "proxyUrl": "http://127.0.0.1:5000/nuevo"
+    }
+  ]
+}

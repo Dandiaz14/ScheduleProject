@@ -1,0 +1,24 @@
+CREATE TABLE user(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    mail VARCHAR(128) NOT NULL,
+    password VARCHAR(64) 
+);
+
+CREATE TABLE contact(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(30) NOT NULL,
+    phone BIGINT,
+    mail VARCHAR(123) NOT NULL,
+    facebook VARCHAR(20) NOT NULL,
+    twitter VARCHAR(20) NOT NULL,
+    instagram VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE usercontact(
+    id_user INT,
+    id_contact INT,
+    FOREIGN KEY (id_user)
+    REFERENCES user(id),
+    FOREIGN KEY (id_contact)
+    REFERENCES contact(id)
+);
